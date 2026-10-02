@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#120615">
+  <meta name="description" content="Akobir & Asal — to'y taklifnomasi">
+  <meta property="og:title" content="Akobir & Asal — To'y taklifnomasi">
+  <meta property="og:description" content="Sizni baxtimizning eng go'zal kuniga taklif qilamiz!">
+  <title>Akobir & Asal — To'y taklifnomasi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lock">
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <!-- Kirish oynasi -->
+  <div id="cover">
+    <div class="cover-orbit"></div>
+    <div class="cover-flower">✦</div>
+    <p class="eyebrow">Bir umrga birga...</p>
+    <p id="guest" class="guest"></p>
+
+    <div class="envelope" aria-hidden="true">
+      <div class="envelope-flap"></div>
+      <div class="envelope-card">
+        <span>To'y</span>
+        <strong>A</strong>
+        <span>&amp; A</span>
+      </div>
+    </div>
+
+    <h1 class="script gold cover-names">Akobir <span>&amp;</span> Asal</h1>
+    <p class="cover-sub">BOTIR BAXRIDDINOVLAR OILASI sizni baxtli kunimizga sherik bo'lishga taklif qiladi</p>
+
+    <button class="liquid-btn primary" id="open" type="button">
+      <span>💌</span> Taklifnomani ochish
+      <i></i>
+    </button>
+    <div class="sound-hint">♪ Musiqa va sehrli animatsiya bilan</div>
+  </div>
+
+  <header class="topbar">
+    <div class="mini-logo script gold">A &amp; A</div>
+    <button id="mus" type="button" aria-label="Musiqani yoqish/o'chirish">
+      <span class="music-bars"><i></i><i></i><i></i><i></i></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow rv">Nikoh to'yiga taklif</div>
+        <div class="tiny-line rv d1"><span></span> 18 • 10 • 2026 <span></span></div>
+        <div class="family-line rv d1">BOTIR BAXRIDDINOVLAR OILASI</div>
+
+        <h1 class="names script gold rv d2">
+          <span>Akobir</span>
+          <small>&amp;</small>
+          <span>Asal</span>
+        </h1>
+
+        <p class="hero-quote rv d3">
+          “Ikki qalb, bir taqdir, bir umrga birga...”
+        </p>
+
+        <div class="scroll-cue rv d3">
+          <span>pastga suring</span>
+          <b>↓</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABRIK -->
+    <section class="section message-section">
+      <div class="glass-card message-card rv">
+        <span class="section-kicker">Aziz mehmonimiz</span>
+        <h2 class="script gold">Sizni kutamiz</h2>
+        <div class="ornament">❦</div>
+        <p>
+          Hayotimizdagi eng quvonchli va unutilmas kunlardan birida
+          sizni yonimizda ko'rish biz uchun katta baxt.
+          Quvonchimizni siz bilan baham ko'rishni istaymiz.
+        </p>
+        <div class="signature script">Akobir &amp; Asal</div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section countdown-section">
+      <span class="section-kicker rv">Bizning kunimizgacha</span>
+      <h2 class="script gold rv d1">Qancha qoldi?</h2>
+
+      <div class="date-ribbon rv d2">
+        <span id="dt">20 dekabr 2026</span>
+      </div>
+
+      <div class="cd rv d3">
+        <div class="time-glass"><b id="cd">0</b><span>KUN</span></div>
+        <div class="time-glass"><b id="ch">0</b><span>SOAT</span></div>
+        <div class="time-glass"><b id="cm">0</b><span>DAQIQA</span></div>
+        <div class="time-glass"><b id="cs">0</b><span>SONIYA</span></div>
+      </div>
+    </section>
+
+    <!-- DASTUR -->
+    <section class="section">
+      <span class="section-kicker rv">Bayram dasturi</span>
+      <h2 class="script gold rv d1">Bugun biz bilan</h2>
+
+      <div class="timeline">
+        <article class="event glass-card rv d1">
+          <div class="event-icon">🍲</div>
+          <div>
+            <span class="event-time">15:00</span>
+            <h3>El oshi</h3>
+            <p>Azizlar davrasida iliq suhbat va duolar.</p>
+          </div>
+        </article>
+
+        <div class="timeline-line"></div>
+
+        <article class="event glass-card rv d2">
+          <div class="event-icon">🥂</div>
+          <div>
+            <span class="event-time">18:00</span>
+            <h3>Visol oqshomi</h3>
+            <p>Visol oqshomida quvonchimizga sherik bo'ling.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MANZIL -->
+    <section class="section location-section">
+      <span class="section-kicker rv">Bizni toping</span>
+      <h2 class="script gold rv d1">To'y manzili</h2>
+
+      <div class="location-card glass-card rv d2">
+        <div class="map-glow">📍</div>
+        <h3>Farovon tuyxona</h3>
+        <p>Mehmonlarimizni shu manzilda kutib qolamiz.</p>
+
+        <a class="liquid-btn secondary" href="https://maps.app.goo.gl/du88RMXVN3XR4SEo6" target="_blank" rel="noopener">
+          <span>🗺️</span> Xaritada ko'rish <i></i>
+        </a>
+      </div>
+    </section>
+    <!-- YAKUN / EZGU TILAK -->
+    <section class="section final-section">
+      <div class="final-halo"></div>
+      <div class="blessing-card glass-card rv">
+        <span class="section-kicker">Ezgu tilaklar bilan</span>
+        <h2 class="script gold final-title rv d1">Bir umrga birga...</h2>
+        <div class="ornament rv d2">❦</div>
+        <p class="final-text rv d2">
+          Yangi hayot yo‘lingiz doimo mehr, muhabbat va fayzga to‘la bo‘lsin.
+          Har tongingiz umid bilan, har kuningiz quvonch bilan,
+          har oqshomingiz xotirjamlik bilan qarshi olinsin.
+          Bir-biringizga suyanch, farzandlaringizga mehribon ota-ona,
+          yaqinlaringizga esa baxt ulashuvchi go‘zal oila bo‘lib yashang.
+        </p>
+        <p class="meaningful-quote script rv d3">
+          “Baxt — bir uyda yashash emas, bir qalbda bir umr yashashdir.”
+        </p>
+        <div class="rings rv d3">○ ○</div>
+        <p class="script final-names rv d3">Akobir &amp; Asal</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-line"></div>
+    <p class="script gold">Bizning hikoyamiz endi boshlanadi...</p>
+    <small>18 • 10 • 2026</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
